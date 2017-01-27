@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app='myApp' ng-controller='assurCtrl'>
+  <head>
+    <meta charset="utf-8">
+    <title>Assurance</title>
+    <link rel="stylesheet" href="styles/bootstrap.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2">
+          <!--Sidebar content-->
+
+          Search: <input ng-model="queryClient" />
+        </div>
+          <!--Body content-->
+
+        <div class="col-md-10">
+          <ul class="clients">
+            <li ng-repeat="client in clients | filter:queryClient" class="thumbnail">
+              <a href="#!/client/{{client.name}}">{{client.name}}</a>
+              <p>{{client.cars}}</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script/angular.min.js"></script>
+  <script src="script/app.js"></script>
+  <script src="script/app.module.js"></script>
+  <script src="client-detail/client-detail.component.js"></script>
+  <script src="client-detail/client-detail.module.js"></script>
+
+  </script>
+  <!-- <script src="script/app.config.js"></script> -->
+</html>

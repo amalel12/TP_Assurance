@@ -1,0 +1,6 @@
+TP Assurance :
+ -Permettre au conseiller de creer , modifier et visualiser un client
+ -Permettre au conseiller de pouvoir lui ajouter une assurance sur un produit
+ (c'est à dire un client peut avoir 0 ou plusieurs voitures ,
+ il faut que le conseiller puisse lui vendre une assurance pour chaqu'une
+  de ses voitures).
